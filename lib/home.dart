@@ -9,7 +9,7 @@ class Home extends StatelessWidget {
       Container(
         padding: const EdgeInsets.all(70),
         color: const Color(0xFF009457),
-        child: const Center (
+        child: const Center(
           child: Text(
             'Seja bem-vindo ao',
             style: TextStyle(
@@ -20,38 +20,36 @@ class Home extends StatelessWidget {
           ),
         ),
       ),
-      Container(
-        margin: const EdgeInsets.only(top: 70),
-        child: const Center (
-          child: Text(
-            'Giro Bauru',
-            style: TextStyle(
-              fontFamily: 'RocknRoll One',
-              color: Color(0xFF009457),
-              fontSize: 60,
-              fontWeight: FontWeight.bold,
+      Expanded(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: const [
+            Text(
+              'Giro Bauru',
+              style: TextStyle(
+                fontFamily: 'RocknRoll One',
+                color: Color(0xFF009457),
+                fontSize: 60,
+                fontWeight: FontWeight.bold,
+              ),
             ),
-          ),
-        ),
-      ),
-      Container(
-        margin: const EdgeInsets.only(bottom: 70),
-        child: const Center (
-          child: Text(
-            'Desbravando a cidade sem limites',
-            style: TextStyle(
-              fontFamily: 'RocknRoll One',
-              color: Colors.grey,
-              fontSize: 20,
-              fontWeight: FontWeight.bold,
+            Text(
+              'Desbravando a cidade sem limites',
+              style: TextStyle(
+                fontFamily: 'RocknRoll One',
+                color: Colors.grey,
+                fontSize: 20,
+                fontWeight: FontWeight.bold,
+              ),
             ),
-          ),
+          ],
         ),
       ),
       Container(
         color: const Color(0xFF009457),
         padding: const EdgeInsets.all(40),
-        child: const Center (
+        child: const Center(
           child: Text(
             'Clique em um botão para conhecer os principais pontos de Bauru',
             textAlign: TextAlign.center,
