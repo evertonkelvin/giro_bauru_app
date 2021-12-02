@@ -1,5 +1,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.giro_bauru_app">
+
+  <uses-permission android:name="android.permission.INTERNET" />
+  
    <application
         android:label="giro_bauru_app"
         android:icon="@mipmap/ic_launcher">
